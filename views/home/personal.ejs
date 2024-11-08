@@ -1,0 +1,27 @@
+<article class="personal-carousel">
+  <% personal.forEach((feature) => { %>
+  <div class="personal-container">
+    <div class="personal-text-container">
+      <h1 class="personal-title"><%= feature.title %></h1>
+      <p class="personal-description"><%= feature.description %></p>
+
+      <a class="personal-link tasks" href="<%= feature.linkURL %>">
+        <h4 class="personal-link-text"><%= feature.linkText %></h4>
+        <img class="personal-link-image" src="/buttons/arrow.png" />
+      </a>
+    </div>
+
+    <img class="personal-image" src="<%= feature.image %>" />
+  </div>
+  <% }) %>
+</article>
+
+<article class="personal-controller">
+  <img class="personal-next" src="/home/personal/next.png" />
+
+  <div class="personal-indicator-container">
+    <% personal.forEach(() => { %>
+    <img class="personal-indicator" src="/buttons/indicator.png" />
+    <% }) %>
+  </div>
+</article>

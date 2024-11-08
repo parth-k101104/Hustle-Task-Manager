@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #region Google Font Server -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- #endregion Google Font Server -->
+    <!-- #region Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- #endregion Google Font Server -->
+    <link rel="stylesheet" href="/todo.css" />
+    <title>TaskTonic | <%= todo.type %></title>
+  </head>
+
+  <body>
+    <header id="header">
+      <%- include("./todo/navbar.ejs", { type: todo.type }) %>
+    </header>
+
+    <main>
+      <section id="todo-lists-section">
+        <%- include("./todo/lists.ejs", { ...todo }) %>
+      </section>
+    </main>
+
+    <script src="/Lists.js" type="module"></script>
+  </body>
+</html>

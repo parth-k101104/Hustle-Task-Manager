@@ -1,0 +1,203 @@
+/*-------------------------------------------------------------------*/
+/*------------------------- PERSONAL STYLES -------------------------*/
+/*-------------------------------------------------------------------*/
+
+#personal-section {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+  margin: 3rem 0 0 0;
+  position: relative;
+  display: grid;
+}
+
+#personal-section::after {
+  background-image: linear-gradient(45deg, #2f0d65 30%, #510d37 60%);
+  transform: skewY(-5deg);
+  box-shadow: 0 0 20px;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  inset: 0;
+}
+
+/*------------------------------------------------*/
+/*------------------- CAROUSEL -------------------*/
+/*------------------------------------------------*/
+
+.personal-carousel {
+  justify-content: flex-start;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  width: 1116px;
+  display: grid;
+  gap: 1rem;
+}
+
+.personal-container {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  width: 1100px;
+  display: grid;
+  gap: 1rem;
+}
+
+/*----------------------------------------------*/
+/*--------------- TEXT CONTAINER ---------------*/
+/*----------------------------------------------*/
+
+.personal-text-container {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.personal-title {
+  font-family: "Josephin Regular", sans-serif;
+  text-shadow: 4px 4px #000;
+  font-weight: 500;
+  font-size: 5rem;
+  cursor: default;
+  color: #fff;
+}
+
+.personal-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #aeaeae;
+  cursor: default;
+}
+
+.personal-link {
+  transition: background-color 450ms, translate 150ms, box-shadow 150ms;
+  box-shadow: 4px 4px 0 #00000070;
+  background-color: #e10044;
+  padding: 0.25rem 1.5rem;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 2.5px;
+  align-items: center;
+  width: fit-content;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.personal-link-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.personal-link-image {
+  width: 25px;
+}
+
+.personal-image {
+  filter: drop-shadow(4px 4px 0 #00000080);
+  width: 325px;
+}
+
+/*----------------------------------------*/
+/*-------------- CONTROLLER --------------*/
+/*----------------------------------------*/
+
+.personal-controller {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.personal-next {
+  transition: scale 400ms, opacity 400ms;
+  filter: drop-shadow(2px 2px 2px);
+  cursor: pointer;
+  width: 40px;
+}
+
+.personal-indicator-container {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.personal-indicator {
+  transition: opacity 400ms, scale 400ms;
+  filter: drop-shadow(1px 1px 2px);
+  opacity: 0.25;
+  width: 20px;
+}
+
+/*----------------------------------------*/
+/*-------------- ANIMATIONS --------------*/
+/*----------------------------------------*/
+
+.personal-reveal {
+  animation: PersonalReveal 400ms forwards;
+}
+
+.personal-hide {
+  animation: PersonalHide 400ms forwards;
+}
+
+@keyframes PersonalReveal {
+  0% {
+    translate: 0 10px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes PersonalHide {
+  0% {
+    translate: 0;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 -10px;
+    opacity: 0;
+  }
+}
+
+/*-------------------------------------*/
+/*------------ TRANSITIONS ------------*/
+/*-------------------------------------*/
+
+.personal-link:hover {
+  background-color: #b50036;
+}
+
+.personal-link:focus {
+  background-color: #840028;
+  box-shadow: 0 0 #00000070;
+  translate: 0 4px;
+}
+
+.personal-next:hover {
+  scale: 1.2;
+}
+
+.personal-indicator:nth-of-type(1) {
+  scale: 1.4;
+  opacity: 1;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

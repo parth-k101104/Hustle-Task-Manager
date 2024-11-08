@@ -1,0 +1,67 @@
+<h1 class="comments-section-title">WHAT THE PEOPLE HAVE TO SAY</h1>
+
+<article class="comment-carousel">
+  <% comments.forEach((slide) => { %>
+  <article class="comment-slide">
+    <% slide.forEach((comment) => { %>
+    <article class="comment-container">
+      <div class="comment-header-container">
+        <img class="comment-image" src="<%= comment.image %>" />
+
+        <div class="comment-title-container">
+          <h2 class="comment-name"><%= comment.name %></h2>
+
+          <div class="comment-socials-container">
+            <% comment.socials.forEach((social) => { %>
+            <a
+              class="comments-social-link"
+              href="<%= social.URL %>"
+              target="_blank"
+            >
+              <img class="comment-social-image" src="<%= social.image %>" />
+            </a>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment-info-container">
+        <h2 class="comment-description"><%= comment.description %></h2>
+
+        <div class="comment-links-container">
+          <a
+            href="mailto:random@gmail.com?subject=About%20TaskTonic"
+            class="comment-link"
+            target="_blank"
+          >
+            <img class="comment-link-image" src="/buttons/mail.png" />
+            <h3 class="comment-link-text">Contact Me</h3>
+          </a>
+
+          <a
+            href="https://dotnet.microsoft.com/en-us/"
+            class="comment-link"
+            target="_blank"
+          >
+            <img class="comment-link-image" src="/buttons/home.png" />
+            <h3 class="comment-link-text">Organization</h3>
+          </a>
+        </div>
+      </div>
+    </article>
+    <% }) %>
+  </article>
+  <% }) %>
+</article>
+
+<article class="comments-controller-container">
+  <img class="comments-controller up" src="/home/comments/up.png" />
+
+  <div class="comments-indicator-container">
+    <% comments.forEach(() => { %>
+    <img class="comments-indicator" src="/buttons/indicator.png" />
+    <% }) %>
+  </div>
+
+  <img class="comments-controller down" src="/home/comments/down.png" />
+</article>

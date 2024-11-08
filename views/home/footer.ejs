@@ -1,0 +1,109 @@
+<article class="footer-header">
+  <a class="footer-header-title-link" href="#header">
+    <h1 class="footer-header-title">TaskTonic</h1>
+  </a>
+
+  <% if(account === undefined) { %>
+  <a class="footer-header-link" href="#account-section">
+    <img class="footer-header-link-image" src="/buttons/signup.png" />
+    <h3 class="footer-header-link-text">Register</h3>
+  </a>
+  <% } %>
+</article>
+
+<article class="footer-body">
+  <article class="footer-contacts-container">
+    <h2 class="footer-contacts-container-title">Contacts</h2>
+
+    <a
+      href="mailto:ryanndmello10@gmail.com?subject=Task%20Tonic%20Feedback"
+      class="footer-contact-link"
+      target="_blank"
+    >
+      <h3 class="footer-contact-link-text">Email</h3>
+      <img class="footer-contact-link-image" src="/buttons/gmail.png" />
+    </a>
+
+    <a
+      href="https://wa.me/9145000789"
+      class="footer-contact-link"
+      target="_blank"
+    >
+      <h3 class="footer-contact-link-text">WhatsApp</h3>
+      <img class="footer-contact-link-image" src="/buttons/what.png" />
+    </a>
+
+    <a
+      class="footer-contact-link"
+      href="https://twitter.com/RyxnDmello"
+      target="_blank"
+    >
+      <h3 class="footer-contact-link-text">Twitter</h3>
+      <img class="footer-contact-link-image" src="/buttons/twitter.png" />
+    </a>
+  </article>
+
+  <article class="footer-links-container">
+    <h2 class="footer-links-container-title">Socials</h2>
+
+    <% footer.socials.forEach((social) => { %>
+    <a class="footer-link" target="_blank" href="<%= social.URL %>">
+      <img class="footer-link-image" src="<%= social.image %>" />
+    </a>
+    <% }) %>
+  </article>
+
+  <article class="footer-links-container">
+    <h2 class="footer-links-container-title">Quick</h2>
+
+    <a class="footer-link" href="#features-section">
+      <h3 class="footer-link-text">Features</h3>
+    </a>
+
+    <a class="footer-link" href="#templates-section">
+      <h3 class="footer-link-text">Templates</h3>
+    </a>
+
+    <a class="footer-link" href="#personal-section">
+      <h3 class="footer-link-text">Personal</h3>
+    </a>
+
+    <a class="footer-link" href="#comments-section">
+      <h3 class="footer-link-text">Comments</h3>
+    </a>
+  </article>
+
+  <article class="footer-links-container">
+    <h2 class="footer-links-container-title">Lists</h2>
+
+    <a class="footer-link" href="/todo/personal">
+      <h3 class="footer-link-text">Personal</h3>
+    </a>
+
+    <a class="footer-link" href="/todo/daily">
+      <h3 class="footer-link-text">Daily</h3>
+    </a>
+
+    <a class="footer-link" href="/todo/weekly">
+      <h3 class="footer-link-text">Weekly</h3>
+    </a>
+
+    <a class="footer-link" href="/todo/monthly">
+      <h3 class="footer-link-text">Monthly</h3>
+    </a>
+
+    <a class="footer-link" href="/todo/yearly">
+      <h3 class="footer-link-text">Yearly</h3>
+    </a>
+  </article>
+</article>
+
+<article class="footer-footer">
+  <h1 class="footer-footer-title">
+    <span class="at">@</span>RYAN NOLASCO D MELLO
+  </h1>
+
+  <a class="top" href="#header">
+    <img class="top-image" src="/buttons/top.png" />
+  </a>
+</article>

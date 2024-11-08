@@ -1,0 +1,30 @@
+<nav>
+  <h1 class="nav-logo">TaskTonic</h1>
+
+  <article class="nav-links-container">
+    <% if(account !== undefined) { %>
+    <div class="nav-list-links-container">
+      <% header.lists.forEach((list) => { %>
+      <a class="nav-link" href="<%= list.URL %>">
+        <p class="nav-link-text"><%= list.name %></p>
+      </a>
+      <% }) %>
+    </div>
+
+    <a class="nav-collection-link" href="/todo/collection">
+      <img class="nav-collection-link-image" src="/buttons/personal.png" />
+      <p class="nav-collection-link-text">Collection</p>
+    </a>
+
+    <div class="nav-profile-container">
+      <img class="nav-profile-image" src="/buttons/profile.png" />
+      <h3 class="nav-profile-username" src=""><%= username %></h3>
+    </div>
+    <% } else { %>
+    <a class="nav-register-link" href="#account-section">
+      <img class="nav-register-link-image" src="/buttons/signup.png" />
+      <p class="nav-register-link-text">Register</p>
+    </a>
+    <% } %>
+  </article>
+</nav>

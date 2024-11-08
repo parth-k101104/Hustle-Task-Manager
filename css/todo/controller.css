@@ -1,0 +1,234 @@
+/*---------------------------------------------------------*/
+/*------------------- CONTROLLER STYLES -------------------*/
+/*---------------------------------------------------------*/
+
+#controller {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: stretch;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.controller-divider {
+  border-top: 2px solid #ffffff08;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+/*----------------------------------*/
+/*------------- INPUTS -------------*/
+/*----------------------------------*/
+
+.controller-inputs-container {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.controller-input {
+  padding: 0.65rem 0.65rem 0.5rem 0.65rem;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: 2px solid #ffffff10;
+  box-shadow: 4px 4px #000;
+  outline: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
+}
+
+.controller-input::placeholder {
+  font-family: "Poppins", sans-serif;
+  transition: opacity 300ms;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  opacity: 0.15;
+  color: #fff;
+}
+
+.controller-input:hover::placeholder {
+  opacity: 0;
+}
+
+/*----------------------------------*/
+/*------------- RADIOS -------------*/
+/*----------------------------------*/
+
+.controller-priority-container {
+  justify-content: stretch;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.controller-radio-block {
+  box-shadow: 4px 4px #000;
+  justify-content: stretch;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.controller-radio-block > label {
+  transition: background-color 250ms, border-color 400ms;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #ffffff10;
+  padding: 0.5rem 0 0.3rem 0;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #cdcdcd;
+  cursor: pointer;
+}
+
+.controller-radio-block:nth-of-type(1) > label:hover {
+  border: 2px solid #ff000050;
+}
+
+.controller-radio-block:nth-of-type(2) > label:hover {
+  border: 2px solid #0400ff50;
+}
+
+.controller-radio-block:nth-of-type(3) > label:hover {
+  border: 2px solid #00ff0050;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/*---------------------------------*/
+/*------------ BUTTONS ------------*/
+/*---------------------------------*/
+
+.controller-buttons-container {
+  justify-content: stretch;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.controller-button {
+  transition: background-color 450ms;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  box-shadow: 4px 4px;
+  border-radius: 1px;
+  padding: 0.35rem 0;
+  cursor: pointer;
+  display: grid;
+  border: none;
+  gap: 0.5rem;
+}
+
+.controller-button.add {
+  background-color: #0000c8;
+}
+
+.controller-button.clear {
+  background-color: #c60000;
+}
+
+.controller-button-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.25px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.controller-button-image {
+  width: 30px;
+}
+
+/*------------------------------------------------*/
+/*----------------- PROGRESS BAR -----------------*/
+/*------------------------------------------------*/
+
+.controller-progress-bar-container {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: none;
+  gap: 0.25rem;
+}
+
+.controller-progress-bar {
+  border: 2px solid #0004ff5f;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  height: 15px;
+}
+
+.controller-progress-bar-fill {
+  background-color: #0002865f;
+  border-radius: 40px;
+  position: absolute;
+  height: 100%;
+  content: "";
+  width: 0%;
+  left: 0;
+  top: 0;
+}
+
+.controller-progress-bar-details {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.controller-progress-bar-percentage,
+.controller-progress-bar-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 200;
+  font-size: 1rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*-----------------------------------------------*/
+/*----------------- TRANSITIONS -----------------*/
+/*-----------------------------------------------*/
+
+.controller-radio-block:nth-of-type(1) > input[type="radio"]:checked + label {
+  background-color: #ff000070;
+}
+
+.controller-radio-block:nth-of-type(2) > input[type="radio"]:checked + label {
+  background-color: #0400ff70;
+}
+
+.controller-radio-block:nth-of-type(3) > input[type="radio"]:checked + label {
+  background-color: #00ff0070;
+}
+
+.controller-button.add:hover {
+  background-color: #000097;
+}
+
+.controller-button.add:focus {
+  background-color: #000066;
+}
+
+.controller-button.clear:hover {
+  background-color: #a00000;
+}
+
+.controller-button.clear:focus {
+  background-color: #770000;
+}
+
+/*------------------------------------------------*/
+/*------------------ END OF CSS ------------------*/
+/*------------------------------------------------*/
