@@ -41,7 +41,7 @@
     [
       {
         "title": "Safe & Secure",
-        "description": "TaskTonic uses advanced encryption to safeguard your data. All your tasks and personal details are encrypted during storage and transmission, ensuring only authorized users can access them."
+        "description": "Hustle uses advanced encryption to safeguard your data. All your tasks and personal details are encrypted during storage and transmission, ensuring only authorized users can access them."
       },
       {
         "title": "Swords & Shields",
@@ -63,7 +63,7 @@
       },
       {
         "title": "Simplicity",
-        "description": "With TaskTonic's clean design and easy navigation, you can effortlessly create, organize, and manage your tasks, allowing you to stay focused and productive with minimal effort."
+        "description": "With Hustle's clean design and easy navigation, you can effortlessly create, organize, and manage your tasks, allowing you to stay focused and productive with minimal effort."
       }
     ]
   ],
@@ -158,9 +158,9 @@
   "comments": [
     [
       {
-        "image": "/home/comments/com-1.png",
-        "name": "Sarah Thompson",
-        "description": "TaskTonic has revolutionized my productivity! With its intuitive interface and powerful features, I can easily manage and prioritize my tasks like never before. As a developer, it has helped me tremendously in my projects.",
+        "image": "/home/comments/sahil.jpg",
+        "name": "Sahil Dehrange",
+        "description": "Hustle has revolutionized my productivity! With its intuitive interface and powerful features, I can easily manage and prioritize my tasks like never before. As a developer, it has helped me tremendously in my projects.",
         "socials": [
           {
             "URL": "https://www.github.com/",
@@ -181,9 +181,9 @@
         ]
       },
       {
-        "image": "/home/comments/com-2.png",
-        "name": "John Anderson",
-        "description": "TaskTonic's user-friendly design makes task management a breeze. I appreciate the simplicity and efficiency of adding, editing, and completing tasks. It's a must-have for anyone looking to stay organized.",
+        "image": "/home/comments/parth.jpg",
+        "name": "Parth Kumbhar",
+        "description": "Hustle's user-friendly design makes task management a breeze. I appreciate the simplicity and efficiency of adding, editing, and completing tasks. It's a must-have for anyone looking to stay organized.",
         "socials": [
           {
             "URL": "https://www.github.com/",
@@ -206,9 +206,9 @@
     ],
     [
       {
-        "image": "/home/comments/com-3.png",
-        "name": "Emily Rodriguez",
-        "description": "TaskTonic's recurring task feature is a lifesaver. I can set up tasks that repeat daily, weekly, monthly, or yearly, saving me time and ensuring that I never forget important recurring responsibilities. Just simple and easy.",
+        "image": "/home/comments/manas.jpg",
+        "name": "Manas Panchwagh",
+        "description": "Hustle's recurring task feature is a lifesaver. I can set up tasks that repeat daily, weekly, monthly, or yearly, saving me time and ensuring that I never forget important recurring responsibilities. Just simple and easy.",
         "socials": [
           {
             "URL": "https://www.github.com/",
@@ -229,9 +229,9 @@
         ]
       },
       {
-        "image": "/home/comments/com-4.png",
-        "name": "David Collins",
-        "description": "TaskTonic's progress tracking feature has greatly improved my accountability. With a quick glance, I can see how much I've accomplished and how much is left to do. It keeps me motivated and focused on reaching my goals.",
+        "image": "/home/comments/saumya.jpg",
+        "name": "Saumya Kant Kamal",
+        "description": "Hustle's progress tracking feature has greatly improved my accountability. With a quick glance, I can see how much I've accomplished and how much is left to do. It keeps me motivated and focused on reaching my goals.",
         "socials": [
           {
             "URL": "https://www.github.com/",
@@ -254,9 +254,9 @@
     ],
     [
       {
-        "image": "/home/comments/com-5.png",
-        "name": "Olivia Peterson",
-        "description": "TaskTonic's intuitive design and customizable task lists have revolutionized my productivity. I love how I can categorize tasks, set priorities, and track progress all in one place.",
+        "image": "/home/comments/atharva.jpg",
+        "name": "Atharva Dange",
+        "description": "Hustle's intuitive design and customizable task lists have revolutionized my productivity. I love how I can categorize tasks, set priorities, and track progress all in one place.",
         "socials": [
           {
             "URL": "https://www.github.com/",
@@ -277,9 +277,9 @@
         ]
       },
       {
-        "image": "/home/comments/com-6.png",
-        "name": "Ethan Miller",
-        "description": "TaskTonic has truly transformed the way I approach my daily tasks. With its seamless integration across devices, I can access my to-do list anytime and never miss a beat.",
+        "image": "/home/comments/yash.jpg",
+        "name": "Yash Gupta",
+        "description": "Hustle has truly transformed the way I approach my daily tasks. With its seamless integration across devices, I can access my to-do list anytime and never miss a beat.",
         "socials": [
           {
             "URL": "https://www.github.com/",
